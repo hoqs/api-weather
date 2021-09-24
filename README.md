@@ -1,6 +1,6 @@
 ﻿# api-weather
  
-# Para consultas de geolocalização: "/api/v1/geo/", 
+# Para consultas de geolocalização: "/api/v1/geo/"
 metodo:POST, 
 corpo da requisição: 
 {
