@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: api-weather-app-rs
+  labels:
+    app: api-weather
+    type: backend
+spec:
+  template:
+    metadata:
+      name: api-weather-pod
+      labels:
+        app: api-weather
+        type: backend
+    spec:
+      containers:
+        - name: api-weather-container
+          image: hoqs/api-weather-image
+          ports:
+            - containerPort: 3030
+  replicas: 4
+  selector:
+    matchLabels:
+      type: backend

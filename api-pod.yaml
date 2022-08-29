@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: api-weather-app
+spec:
+  containers:
+    - name: container-api-weather
+      image: hoqs/api-weather-image
+      ports:
+        - containerPort: 3030
