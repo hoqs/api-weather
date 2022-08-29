@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: api-weather-container
-          image: hoqs/api-weather-image
+          image: api-weather-image
           ports:
             - containerPort: 3030
   replicas: 4
