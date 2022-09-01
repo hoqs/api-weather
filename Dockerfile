@@ -14,6 +14,6 @@ COPY --chown=node:node . .
 
 USER node
 
-EXPOSE 8080
+EXPOSE 3030
 
-CMD [ "node", "app.js" ]
+CMD npm start
