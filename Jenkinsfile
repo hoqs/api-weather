@@ -1,10 +1,5 @@
 pipeline{
-    agent {
-        docker{
-            image 'node:8'
-            args '-p 9999:3030'
-        }
-    }
+    agent any
     stages{
         stage('Build'){
             steps{
